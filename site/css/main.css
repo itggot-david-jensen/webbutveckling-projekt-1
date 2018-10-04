@@ -7,15 +7,40 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: auto 1fr auto;
 }
 
 header{
     background-color: red;
+}
 
+.header_text{
+display: flex;
+justify-content: center;
+}
+
+.Yaddle_Head{
+    margin: 5px 0px 0px 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    margin:0;
+}
+
+.main_link{
+    margin:0 5px 5px 5px;
 }
 
 main{
     margin: 0 15% 0 15%;
     background-color: blue;
+}
+
+.active{
+    background-color: black;
 }
