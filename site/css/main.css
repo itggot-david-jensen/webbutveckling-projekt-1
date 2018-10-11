@@ -20,6 +20,11 @@ header{
     width: 100%;
 }
 
+.header_fake{
+    width: 100%;
+    height: 65.67px;
+}
+
 .header_text{
 display: flex;
 justify-content: center;
@@ -55,7 +60,7 @@ main{
 .content{
     /* background-color: rgba(207, 207, 207, 0.8); */
     background-color: hsla(15, 43%, 11%, 0.8);
-    margin: 15% 0 0 0; /* tvärfuckat */
+    /* margin: 15% 0 0 0; */
     height: 100%;
     color: #bfbfbf;
     border-radius: 5%;
@@ -64,7 +69,7 @@ main{
 }
 
 .conten2{
-    margin: 15px;
+    margin: 20px;
 }
 
 .active{
