@@ -4,16 +4,20 @@ body{
 }
 
 .wrapper {
-    height: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
+    
 }
 
 header{
     /* background-color:#382924; */
     /* background-color: #221916; */
     background-color: #281610;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header_text{
@@ -40,8 +44,27 @@ h4{
 }
 
 main{
-    margin: 0 15% 0 15%;
-    background-color: blue;
+    /* margin: 0 15% 0 15%; */
+    background-image: url(../img/yaddle_background.jpg);
+    height: auto;
+    min-height: inherit;
+    padding: 2% 15% 2% 15%;
+    box-sizing: border-box;
+}
+
+.content{
+    /* background-color: rgba(207, 207, 207, 0.8); */
+    background-color: hsla(15, 43%, 11%, 0.8);
+    margin: 15% 0 0 0; /* tvärfuckat */
+    height: 100%;
+    color: #bfbfbf;
+    border-radius: 5%;
+    display:flex;
+    justify-content: center;
+}
+
+.conten2{
+    margin: 15px;
 }
 
 .active{
