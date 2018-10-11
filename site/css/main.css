@@ -51,6 +51,7 @@ h4{
 main{
     /* margin: 0 15% 0 15%; */
     background-image: url(../img/yaddle_background.jpg);
+    background-attachment: fixed;
     height: auto;
     min-height: inherit;
     padding: 2% 15% 2% 15%;
@@ -63,9 +64,17 @@ main{
     /* margin: 15% 0 0 0; */
     height: 100%;
     color: #bfbfbf;
-    border-radius: 5%;
+    border-radius: 25px;
     display:flex;
     justify-content: center;
+}
+
+.content_wrapper{
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+    /* SKRIV EN WRAPPER TILL CONTENT I MAIN */
 }
 
 .conten2{
