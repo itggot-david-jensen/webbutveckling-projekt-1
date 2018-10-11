@@ -11,7 +11,9 @@ body{
 }
 
 header{
-    background-color: red;
+    /* background-color:#382924; */
+    /* background-color: #221916; */
+    background-color: #281610;
 }
 
 .header_text{
@@ -21,6 +23,7 @@ justify-content: center;
 
 .Yaddle_Head{
     margin: 5px 0px 0px 0px;
+    color: #bfbfbf;
 }
 
 nav{
@@ -42,5 +45,20 @@ main{
 }
 
 .active{
-    background-color: black;
+    font-size: 1.3em;
+}
+
+a:link{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #281610;
+    color: #bfbfbf;
 }
