@@ -1,3 +1,7 @@
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//*                                         MAIN                                       *//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
 body{
     margin: 0px;
     height: 100vh;
@@ -12,8 +16,6 @@ body{
 }
 
 header{
-    /* background-color:#382924; */
-    /* background-color: #221916; */
     background-color: #281610;
     position: fixed;
     top: 0;
@@ -49,7 +51,6 @@ h4{
 }
 
 main{
-    /* margin: 0 15% 0 15%; */
     background-image: url(../img/yaddle_background.jpg);
     background-attachment: fixed;
     height: auto;
@@ -59,9 +60,7 @@ main{
 }
 
 .content{
-    /* background-color: rgba(207, 207, 207, 0.8); */
     background-color: hsla(15, 43%, 11%, 0.8);
-    /* margin: 15% 0 0 0; */
     height: 100%;
     color: #bfbfbf;
     border-radius: 25px;
@@ -73,11 +72,9 @@ main{
     display: grid;
     height: 100%;
     width: 100%;
-
-    /* SKRIV EN WRAPPER TILL CONTENT I MAIN */
 }
 
-.conten2{
+.content_index{
     margin: 20px;
 }
 
@@ -98,4 +95,23 @@ a:visited{
 footer{
     background-color: #281610;
     color: #bfbfbf;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 200px;
+}
+.foottag{
+    margin: 10px;
+    border: 0px;
+    border-left: 2px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #bfbfbf;
+}
+
+#farleft{
+    border: 0px;
+}
+
+#footer_merch_link{
+    text-decoration: underline;
 }
