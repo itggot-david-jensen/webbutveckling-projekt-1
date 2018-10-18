@@ -83,29 +83,46 @@ main{
     margin-bottom: 5px;
 }
 
-/* .content_appearances_movies{
-    margin: 20px;
-    grid-column: span 2;
-} */
-
 #content_appearances_movies_image{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
 
+    box-sizing: border-box;
+    margin: 10px;
+
     height: 140px;
+    width: 150px;
+}
+
+#content_appearances_comics_image{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    box-sizing: border-box;
+    margin: 10px;
+
+    height: 140px;
+    width: 150px;
+}
+
+#content_appearances_novels_image{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    box-sizing: border-box;
+    margin: 10px;
+
+    height: 180px;
     width: 140px;
 }
 
-#content_appearances_movies_text{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-#content_appearances_movies_text_title {
+.content_appearances_text_title {
     text-decoration: underline;
     margin: 0px;
     margin-top: 10px;
