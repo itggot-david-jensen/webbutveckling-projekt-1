@@ -74,6 +74,43 @@ main{
     width: 100%;
 }
 
+.content_wrapper_appearances{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 150px auto auto;
+    min-height: 500px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* .content_appearances_movies{
+    margin: 20px;
+    grid-column: span 2;
+} */
+
+#content_appearances_movies_image{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    height: 140px;
+    width: 140px;
+}
+
+#content_appearances_movies_text{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#content_appearances_movies_text_title {
+    text-decoration: underline;
+    margin: 0px;
+    margin-top: 10px;
+}
+
 .content_index{
     margin: 20px;
 }
