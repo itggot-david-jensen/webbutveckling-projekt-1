@@ -74,6 +74,10 @@ main{
     width: 100%;
 }
 
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//*                                   APPEARANCES                                      *//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
 .content_wrapper_appearances{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -109,10 +113,6 @@ main{
     text-decoration: underline;
     margin: 0px;
     margin-top: 10px;
-}
-
-.content_index{
-    margin: 20px;
 }
 
 .active{
@@ -151,4 +151,38 @@ footer{
 
 #footer_merch_link{
     text-decoration: underline;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//*                                         INDEX                                      *//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+.content_index{
+    margin: 20px;
+    width: auto;
+}
+
+.index_image_div{
+    height: 292px;
+    width: 250px;
+}
+
+#index_image{
+    float: left;
+    margin: 0 10px 10px 0px;
+    background-image: url(../img/Yaddle-Index.jpg)
+}
+
+#index_image:hover{
+    background-image: url(../img/yaddle_t-posing_small.jpg)
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//*                                         STORE                                      *//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+.content_store{
+    background-image: url(../img/yaddle_t-posing_small.jpg);
+    height: 1000px;
+    width: 100%;
 }
