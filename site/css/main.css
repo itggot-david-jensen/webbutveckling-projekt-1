@@ -4,7 +4,7 @@
 
 body{
     margin: 0px;
-    height: 100vh;
+    height: auto;
 }
 
 .wrapper {
@@ -61,7 +61,7 @@ main{
 
 .content{
     background-color: hsla(15, 43%, 11%, 0.8);
-    height: 100%;
+    height: auto;
     color: #bfbfbf;
     border-radius: 25px;
     display:flex;
