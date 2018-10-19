@@ -4,7 +4,7 @@
 
 body{
     margin: 0px;
-    height: auto;
+    height: 100vh;
 }
 
 .wrapper {
@@ -20,6 +20,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 11;
 }
 
 .header_fake{
@@ -40,6 +41,7 @@ justify-content: center;
 nav{
     display: flex;
     justify-content: center;
+    padding-bottom: 2px;
 }
 
 h4{
@@ -72,6 +74,44 @@ main{
     display: grid;
     height: 100%;
     width: 100%;
+}
+
+.active{
+    font-size: 1.3em;
+}
+
+a:link{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #281610;
+    color: #bfbfbf;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 200px;
+}
+.foottag{
+    margin: 10px;
+    border: 0px;
+    border-left: 2px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #bfbfbf;
+}
+
+#farleft{
+    border: 0px;
+}
+
+#footer_merch_link{
+    text-decoration: underline;
 }
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -132,44 +172,6 @@ main{
     margin-top: 10px;
 }
 
-.active{
-    font-size: 1.3em;
-}
-
-a:link{
-    color: #bfbfbf;
-    text-decoration: none;
-}
-
-a:visited{
-    color: #bfbfbf;
-    text-decoration: none;
-}
-
-footer{
-    background-color: #281610;
-    color: #bfbfbf;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    min-height: 200px;
-}
-.foottag{
-    margin: 10px;
-    border: 0px;
-    border-left: 2px;
-    padding-left: 10px;
-    border-style: solid;
-    border-color: #bfbfbf;
-}
-
-#farleft{
-    border: 0px;
-}
-
-#footer_merch_link{
-    text-decoration: underline;
-}
-
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /**//*                                         INDEX                                      *//**/
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -199,7 +201,117 @@ footer{
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 .content_store{
+    width: 97.5%;
+    height: auto;
+    background-color: #bfbfbf;
+    border-radius: 25px;
+    margin: 1.25% auto 1.25% auto;
+    color: #281610;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+}
+
+.store_aside{
+    background-color: #cccccc;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 25px 0 0 25px;
+}
+
+.store_list{
+    font-size: 1.2em;
+    padding: 2.5px;
+}
+
+a.store_list{
+    color: #281610;
+}
+
+a.store_list:hover{
+    font-size: 1.25em;
+}
+
+#store_nav{
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 20px 10px 40px;
+}
+
+.store_items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store_item{
+    margin: 20px;
+    box-sizing: content-box;
+}
+
+.store_item:hover{
+    transform: scale(1.05, 1.05)
+}
+
+.item_top{
+    height: 215px;
+    width: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.item_bot{
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.item_unavailable{
+    background-image: url(../img/yaddle_t-posing_smaller\(PNG\).png);
+    background-color: #cccccc;
+    box-shadow: 0px 0px 5px black;
+}
+
+a.shop_link {
+    position: absolute;
+    width: 150px;
+    height: 233px;
+    z-index: 10;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//*                                        TRIVIA                                      *//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+.content_trivia{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.trivia_paragraph{
+    border: 0px;
+    border-bottom: 2px;
+    border-color: #bfbfbf;
+    padding-bottom: 10px;
+    border-style: solid;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//*                                        ERROR                                       *//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+#error_header{
+    display: flex;
+    justify-content: center;
+}
+
+.error_image{
+    margin: 0 auto 0 auto;
     background-image: url(../img/yaddle_t-posing_small.jpg);
-    height: 1000px;
-    width: 100%;
+    width: 250px;
+    height: 358px;
+}
+
+#error_content{
+    margin: 21.440px 15px 21.440px 15px;
 }
